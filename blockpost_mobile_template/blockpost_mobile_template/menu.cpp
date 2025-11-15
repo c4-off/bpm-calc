@@ -101,6 +101,7 @@ namespace menu
 				elements::checkbox( "fly", &variables::flyhack );
 				elements::checkbox( "bhop", &variables::bunnyhop );
 				elements::checkbox( "autostrafe", &variables::autostrafe );
+				elements::checkbox("ghostmode", &variables::ghostmode);
 				ImGui::EndTabItem( );
 			}
 			if ( ImGui::BeginTabItem( "weapon" ) )

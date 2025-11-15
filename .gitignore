@@ -1,0 +1,99 @@
+# Build directories
+vs/
+.vs/
+x64/
+build/
+
+# OS generated files #
+######################
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Icon?
+Desktop.ini
+
+# Visual Studio
+################
+*.suo
+*.user
+*.userosscache
+*.sdf
+*.cache
+*.dbmdl
+*.VC.db
+*.VC.opendb
+*.pdb
+*.ipch
+*.log
+*.tlog
+*.lastbuildstate
+*.vscode
+
+# Compiled Source #
+###################
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.obj
+*.so
+*.out
+*.app
+*.pdb
+*.a
+*.la
+*.lo
+*.slo
+*.ilk
+*.gch
+*.pch
+*.dwo
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Fortran module files
+*.mod
+*.smod
+
+# Debug files #
+###############
+*.d
+*.dSYM/
+*.dmp
+
+# Backup & Package files
+########################
+*.bak
+*.tmp
+*.swp
+*.swo
+*.zip
+*.tar.gz
+*.tgz
+*.7z
+*.rar
+
+# IDE folders #
+###############
+.idea/
+.vscode/
+*.code-workspace
+
+# Test output
+#############
+test-output/
+*.gcov
+
+# Other
+#######
+*.crash
+*.pid
+*.seed
+*.log
+*.stackdump
+
+# Ignore node_modules if present
+node_modules/

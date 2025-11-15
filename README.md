@@ -27,6 +27,7 @@ version: WiP 1.0
   - Fly
   - BunnyHop
   - Autostrafe
+  - GhostMode
 - Antiaims
   > Currently only Visual
   > Only static, jitter not works
@@ -45,6 +46,3 @@ default constole LoadLibrary injector, with device unban
 ![Demo2](blockpost_mobile_template/img/demo2.png)
 
 read license ^_^
-
-
-

@@ -20,6 +20,7 @@ namespace variables
 	bool flyhack = false;
 	bool bunnyhop = false;
 	bool autostrafe = false;
+	bool ghostmode = false;
 	bool thirdperson = false;
 	float third_distance = 1.f;
 	namespace weapons

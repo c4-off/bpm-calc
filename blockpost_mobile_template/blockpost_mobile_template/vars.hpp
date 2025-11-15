@@ -22,6 +22,7 @@ namespace variables
 	extern bool flyhack;
 	extern bool bunnyhop;
 	extern bool autostrafe;
+	extern bool ghostmode;
 	extern bool thirdperson;
 	extern float third_distance;
 	namespace weapons

@@ -6,6 +6,7 @@
 #include "constants.hpp"
 #include "minhook/mh.h"
 #include "globals.hpp"
+#include "c_controlltouch.hpp"
 #include "Windows.h"
 #include <random>
 
@@ -42,21 +43,17 @@ namespace send_pos_hook
 			}
 		}
 
+		bool shooting = c_controll_touch::get_in_shoot();
+		if (variables::ghostmode && shooting != true)
+		{
+			xx = (float)NAN;
+			xy = (float)NAN;
+			xz = (float)NAN;
+		}
+
 		g_ctx.callbacks.call( callback_type::send_pos );
 		g_ctx.callbacks.erase_all( callback_type::send_pos );
 		xxx.x = xx, xxx.y = xy, xxx.z = xz;
-
-		/*
-		if ( !cancel )
-		{
-			send_pos_o( client, xx, xy, xz, lx, ly, bitmask );
-		}
-		else
-		{
-			cancel = false;
-			return;
-		}
-		*/
 
 		send_pos_o( client, xx, xy, xz, lx, ly, bitmask );
 	}
